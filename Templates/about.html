@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,24 +12,25 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/icon.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
+  <link href="{% static 'img/icon.png'%}" rel="icon">
+  <link href="{% static 'img/logo.png'%}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
   <!-- =======================================================
   * Template Name: OnePage - v4.3.0
@@ -49,9 +52,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="statistik.html">Statistik Data</a></li>
-          <li><a class="nav-link scrollto" href="peta.html">Peta Sebaran</a></li>
+          <li><a class="nav-link scrollto" href="../index">Home</a></li>
+          <li><a class="nav-link scrollto" href="../statistik">Statistik Data</a></li>
+          <li><a class="nav-link scrollto" href="../peta">Peta Sebaran</a></li>
           <li><a class="nav-link scrollto active" href="#">About Us</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -99,7 +102,7 @@
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/kacung/apdal.jpeg" class="testimonial-img" alt="">
+                <img src="{% static 'img/kacung/apdal.jpeg'%}" class="testimonial-img" alt="">
                 <h3>Afdal Ramdan Daman Huri</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -112,7 +115,7 @@
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/kacung/aldy.jpeg" class="testimonial-img" alt="">
+                <img src="{% static 'img/kacung/aldy.jpeg'%}" class="testimonial-img" alt="">
                 <h3>Aldy Akbarrizky</h3>
                 <h4>Designer</h4>
               </div>
@@ -125,7 +128,7 @@
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/kacung/iqbal.jpeg" class="testimonial-img" alt="">
+                <img src="{% static 'img/kacung/iqbal.jpeg'%}" class="testimonial-img" alt="">
                 <h3>Iqbal Lutfian</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -138,7 +141,7 @@
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/kacung/marcell.jpeg" class="testimonial-img" alt="">
+                <img src="{% static 'img/kacung/marcell.jpeg'%}" class="testimonial-img" alt="">
                 <h3>Marcell Ivaldri Rachman</h3>
                 <h4>Freelancer</h4>
               </div>
@@ -151,7 +154,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/kacung/mijon.jpeg" class="testimonial-img" alt="">
+                <img src="{% static 'img/kacung/mijon.jpeg'%}" class="testimonial-img" alt="">
                 <h3>Mizan Nur Qalam</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -164,7 +167,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/kacung/sahi.jpeg" class="testimonial-img" alt="">
+                <img src="{% static 'img/kacung/sahi.jpeg'%}" class="testimonial-img" alt="">
                 <h3>Muhammad Sakhi Hartanto</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -186,7 +189,7 @@
       <div class="row">
 
         <div class="col-lg-3 col-md-6 footer-contact">
-          <img src="assets/img/logo-text.png" alt="" style="max-width: 80%; padding-bottom: 10px;">
+          <img src="{% static 'img/logo-text.png'%}" alt="" style="max-width: 80%; padding-bottom: 10px;">
           <br>
           <strong>Politeknik Negeri Bandung</strong><br>
           <p>
@@ -198,10 +201,10 @@
         <div class="col-lg-2 offset-lg-3 col-md-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Beranda</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="statistik.html">Statistik Data</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="peta.html">Peta Sebaran</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../index">Beranda</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../statistik">Statistik Data</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../peta">Peta Sebaran</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../about">About Us</a></li>
           </ul>
         </div>
 
@@ -245,16 +248,16 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/purecounter/purecounter.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="{% static 'vendor/aos/aos.js'%}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js'%}"></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+<script src="{% static 'vendor/purecounter/purecounter.js'%}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js'%}"></script>
 
 <!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="{% static 'js/main.js'%}"></script>
 
 </body>
 
